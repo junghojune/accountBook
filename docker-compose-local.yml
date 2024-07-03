@@ -1,0 +1,1 @@
+version: "3.8"services:  accountbook-database:    container_name: accountbook-database    build:      dockerfile: Dockerfile      context: ./database    image: junghojune/accountbook-database    ports:      - "3306:3306"    environment:      MYSQL_ROOT_PASSWORD: ${SPRING_DATABASE_PASSWORD}      TZ: Asia/Seoul    volumes:      - ./database/config:/etc/mysql/my.cnf
