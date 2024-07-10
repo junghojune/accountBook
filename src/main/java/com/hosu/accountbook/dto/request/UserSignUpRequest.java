@@ -1,0 +1,1 @@
+package com.hosu.accountbook.dto.request;import com.hosu.accountbook.dto.UserAccountDTO;public record UserSignUpRequest(        String email,        String password,        String userName) {    public UserAccountDTO toDto(){        return UserAccountDTO.of(email, password, userName);    }}

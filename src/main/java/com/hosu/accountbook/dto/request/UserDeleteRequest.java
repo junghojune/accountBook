@@ -1,0 +1,1 @@
+package com.hosu.accountbook.dto.request;import com.hosu.accountbook.dto.UserAccountDTO;public record UserDeleteRequest(        String email,        String password) {    public UserAccountDTO toDto(){        return UserAccountDTO.of(email, password);    }}
