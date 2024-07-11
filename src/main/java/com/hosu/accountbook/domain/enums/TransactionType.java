@@ -1,0 +1,1 @@
+package com.hosu.accountbook.domain.enums;import lombok.Getter;public enum TransactionType {    INCOME("수입"),    EXPENSE("지출")    ;    @Getter private final String name;    TransactionType(String name){        this.name = name;    }}
